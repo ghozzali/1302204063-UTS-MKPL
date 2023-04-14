@@ -4,11 +4,14 @@ import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Employee {
+public class Employee { // Package ini berisi kelas Employee yang merepresentasikan seorang pegawai.
 
-	private String employeeId;
-	private String firstName;
-	private String lastName;
+	private String employeeId; // Kelas ini memiliki beberapa atribut seperti employeeId, firstName, lastName,
+															// idNumber, address,
+	private String firstName; // yearJoined, monthJoined, dayJoined, monthWorkingInYear, isForeigner, gender,
+														// monthlySalary,
+	private String lastName; // otherMonthlyIncome, annualDeductible, spouseName, spouseIdNumber, childNames,
+														// dan childIdNumbers.
 	private String idNumber;
 	private String address;
 
@@ -53,7 +56,8 @@ public class Employee {
 	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
 	 */
 
-	public void setMonthlySalary(int grade) {
+	public void setMonthlySalary(int grade) { // Kelas ini memiliki beberapa metode untuk mengatur nilai atribut seperti
+																						// setMonthlySalary(),
 		switch (grade) {
 			case 1:
 				monthlySalary = 3000000;
@@ -77,7 +81,9 @@ public class Employee {
 		this.annualDeductible = deductible;
 	}
 
-	public void setAdditionalIncome(int income) {
+	public void setAdditionalIncome(int income) { // Kelas ini juga memiliki metode getAnnualIncomeTax() yang
+																								// mengembalikan pajak penghasilan tahunan yang harus dibayar oleh
+																								// pegawai berdasarkan gaji bulanan, penghasilan tambahan, durasi kerja
 		this.otherMonthlyIncome = income;
 	}
 
